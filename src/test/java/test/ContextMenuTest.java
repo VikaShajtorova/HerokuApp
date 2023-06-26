@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class ContextMenuTest extends BaseTest {
     @Test
     public void checkCorrectnessOfAlertText(){
-        contextMenuPage.open();
+        contextMenuPage.openContextMenuPage();
         contextMenuPage.rightClickOnHotSpot();
         Alert alert = driver.switchTo().alert();
 
